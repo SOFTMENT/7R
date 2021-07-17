@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/btnback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_margin="4dp"
+        android:id="@+id/freefire_rl"
+        android:background="@drawable/btnbackwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/invested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Invested by: 41 Players"
+            android:fontFamily="@font/roboto"
+            android:textSize="11sp"
+            />
+
+
+            <LinearLayout
+                android:layout_below="@+id/invested"
+               android:id="@+id/player1ll"
+               android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/playerImage1"
+                    android:layout_width="36dp"
+                    android:layout_height="51dp"
+                    android:src="@drawable/photonotavail"
+                    />
+                <TextView
+                    android:id="@+id/playerName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinesh Karthik"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="6dp"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:textColor="#4A4A49"
+                    android:textSize="13sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+           android:layout_below="@+id/player1ll"
+            android:id="@+id/player2ll"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/playerImage2"
+                android:layout_width="36dp"
+                android:layout_height="51dp"
+                android:src="@drawable/photonotavail"
+                />
+            <TextView
+                android:id="@+id/playerName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virat Kohli"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:textColor="#4A4A49"
+                android:textSize="13sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/player3ll"
+          android:layout_below="@+id/player2ll"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/playerImage3"
+                android:layout_width="36dp"
+                android:layout_height="51dp"
+                android:src="@drawable/photonotavail"
+                />
+            <TextView
+            android:id="@+id/playerName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sanju Samson"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:textColor="#4A4A49"
+                android:textSize="13sp"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/investBtn"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/player3ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/gradient_invest_btn_back"
+            android:text="INVEST"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/btnback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/freefire"
+                android:id="@+id/logo"
+                />
+
+            <TextView
+                android:layout_toStartOf="@+id/joinbutton"
+                android:id="@+id/title"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toEndOf="@+id/logo"
+                android:fontFamily="@font/roboto"
+                android:lines="1"
+                android:text="INTENSE BATTING BATTLE "
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_toEndOf="@+id/logo"
+                    android:layout_marginStart="6dp"
+                    android:layout_below="@+id/title"
+                    android:id="@+id/ll"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:minWidth="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Active Matches - 06"
+                    android:textSize="11sp"
+                    />
+
+
+
+            <LinearLayout
+
+                android:layout_marginEnd="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Prize Pool"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:id="@+id/prize"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                  android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="₹270"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginEnd="6dp"
+                android:layout_toStartOf="@+id/go"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/logo"
+                android:layout_below="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+
+                    android:progressBackgroundTint="#ECECEC"
+                    android:progressTint="#2196F3"
+                    android:layout_width="180dp"
+                    android:layout_height="4dp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:indeterminate="false"
+                    android:max="48"
+                    android:progressDrawable="@android:drawable/progress_horizontal"
+                    android:progress="40"
+                    android:layout_marginEnd="16dp"
+                    android:id="@+id/progressbars"
+                    />
+                <TextView
+                    android:id="@+id/totallefttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressbars"
+                    android:layout_marginTop="5dp"
+                    android:text="Only 60 spots left"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/roboto"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressbars"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="11sp"
+                    android:text="0/48"
+                    android:id="@+id/total"
+                    android:layout_alignEnd="@+id/progressbars"
+                    />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:src="@drawable/rightarrow2"
+                android:id="@+id/go"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/logo"
+                android:layout_marginEnd="8dp"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

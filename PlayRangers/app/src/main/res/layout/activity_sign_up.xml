@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:background="@color/whole_back">
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:src="@drawable/user"-->
+<!--            app:civ_border_width="1px"-->
+<!--            app:civ_border_color="#000"-->
+<!--            android:id="@+id/user_profile"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/taptochange"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/user_profile"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:fontFamily="@font/roboto"-->
+<!--            android:text="Tap To Change"-->
+<!--            android:textColor="#F44336"-->
+<!--            />-->
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/softmentfinallogo"
+            />
+        <EditText
+            android:hint="Full Name"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:drawableStart="@drawable/name"
+            android:background="@drawable/edittext_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/fullName"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#545454"
+            android:drawablePadding="6dp"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:hint="Mobile Number"
+            android:lines="1"
+            android:maxLength="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:drawableStart="@drawable/telephone"
+            android:background="@drawable/edittext_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="28dp"
+            android:id="@+id/phone"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#545454"
+            android:drawablePadding="6dp"
+            android:maxLines="1"
+            android:inputType="phone"
+            />
+        <EditText
+            android:hint="Email Address"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:drawableStart="@drawable/mail"
+            android:background="@drawable/edittext_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="28dp"
+            android:id="@+id/email"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#545454"
+            android:drawablePadding="6dp"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:hint="Password"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:drawableStart="@drawable/lock"
+            android:background="@drawable/edittext_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="28dp"
+            android:id="@+id/password"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#545454"
+            android:drawablePadding="6dp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:hint="Referral Code (Optional)"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:drawableStart="@drawable/referral"
+            android:background="@drawable/edittext_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="28dp"
+            android:id="@+id/referralCode"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#545454"
+            android:drawablePadding="6dp"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+        <LinearLayout
+            android:id="@+id/termslayout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            >
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the "
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/roboto"
+                />
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text=" Terms And Conditions"
+                android:textColor="@color/link_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/button_color"
+            app:cardCornerRadius="6dp"
+            android:layout_width="match_parent"
+            android:id="@+id/signUpCard"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="42dp">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SIGN UP"
+                android:fontFamily="@font/roboto"
+                android:textColor="#FFFFFF"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            >
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:text="Already Have An Account? "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/signin"
+                android:layout_marginStart="6dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:text="Sign In"
+                android:textColor="#FFEB3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

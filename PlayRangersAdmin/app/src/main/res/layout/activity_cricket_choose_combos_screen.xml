@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_back"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/whole_back"
+        android:id="@+id/toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                />
+            <TextView
+                android:layout_centerInParent="true"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL COMBOS"
+                android:fontFamily="sans-serif-condensed"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:background="#AAAAAA"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+
+        />
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:gravity="center"
+        >
+        <RelativeLayout
+            android:id="@+id/duo"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:src="@drawable/crick"
+                android:id="@+id/image1"
+                android:layout_marginStart="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:text="DUO"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/trio"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:src="@drawable/crick"
+                android:id="@+id/image2"
+                android:layout_marginStart="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:text="TRIO"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/squad"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:src="@drawable/crick"
+                android:id="@+id/image3"
+                android:layout_marginStart="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:text="SQUAD"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

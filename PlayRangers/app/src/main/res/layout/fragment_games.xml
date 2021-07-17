@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_container"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_back"
+    >
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".Fragments.GamesFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/headerviewpager"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/dotlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="158dp"
+        />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cricket"
+       android:layout_margin="16dp"
+        android:background="@drawable/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+     android:layout_margin="4dp"
+        android:background="@drawable/btnbackwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_margin="8dp"
+            android:id="@+id/imgGame3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/crick"
+            android:layout_centerVertical="true"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgGame3"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/titleGame3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:text="Cricket 2021"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:minWidth="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Active Matches - 0"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@drawable/ic_online"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/rightarrow2"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_margin="4dp"
+            android:background="@drawable/btnbackwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_margin="8dp"
+                android:id="@+id/imgGame2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ludo"
+                android:layout_centerVertical="true"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/imgGame2"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/titleGame2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
+                    android:text="Ludo King"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+
+                    >
+
+                    <TextView
+
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:minWidth="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Active Matches - 0"
+                        android:textSize="12sp"
+                        />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/ic_online"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/rightarrow2"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:visibility="visible"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_margin="4dp"
+            android:id="@+id/freefire_rl"
+            android:background="@drawable/btnbackwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:id="@+id/imgGame"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/freefire"
+                android:layout_centerVertical="true"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/imgGame"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+
+                    android:id="@+id/titleGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
+                    android:text="Free Fire"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+
+                    >
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:minWidth="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Active Matches - 0"
+                        android:textSize="12sp"
+                        />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/ic_online"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/rightarrow2"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</ScrollView>
+
+</RelativeLayout>

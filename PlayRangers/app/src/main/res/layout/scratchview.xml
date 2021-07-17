@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<dev.skymansandy.scratchcardlayout.ui.ScratchCardLayout
+    android:id="@+id/scratchCard"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_centerInParent="true"
+    app:scratchWidth="40dp"
+    app:scratchEnabled="true"
+    app:scratchDrawable="@drawable/scratchimg"
+    app:scratchRevealFullAtPercent="100"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FUCK YOU :)"
+        android:fontFamily="@font/roboto"
+        />
+</LinearLayout>
+
+</dev.skymansandy.scratchcardlayout.ui.ScratchCardLayout>
+</RelativeLayout>

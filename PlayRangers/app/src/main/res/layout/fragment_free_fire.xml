@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/whole_back"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_container"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".Fragments.FreeFireFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgGame"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/freefire" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/imgGame"
+            android:layout_toEndOf="@+id/imgGame"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/titleGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Free Fire"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:text="Active Matches - 06"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_online" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Edit Username"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/topButtonsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="16dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ongoing"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto"
+            android:text="OnGoing"
+            android:layout_marginEnd="6dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnback"
+            android:textColor="#fff"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upcoming"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:fontFamily="@font/roboto"
+            android:text="UpComing"
+            android:layout_marginStart="6dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnbackred"
+            android:layout_marginEnd="6dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/results"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:fontFamily="@font/roboto"
+            android:text="Results"
+            android:layout_marginStart="6dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnback"
+            />
+    </LinearLayout>
+
+
+    <in.softment.playrangers.Utils.NonSwipeAbleViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        />
+
+
+</LinearLayout>

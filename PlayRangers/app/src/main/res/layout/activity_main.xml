@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/black"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+
+                />
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_notifications_none_24"
+               />
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="26dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/flagmenufinal"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <in.softment.playrangers.Utils.NonSwipeAbleViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="48dp"
+        />
+
+
+
+    <com.tenclouds.fluidbottomnavigation.FluidBottomNavigation
+
+        android:id="@+id/fluidBottomNavigation"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:height="54dp"
+        app:accentColor="#FFFFFF"
+        app:backColor="#FFFFFF"
+        app:iconColor="#FFFFFF"
+        app:iconSelectedColor="#F44336"
+        app:textColor="#FFFFFF"
+        />
+</RelativeLayout>
